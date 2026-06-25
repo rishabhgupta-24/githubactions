@@ -31,10 +31,10 @@ jobs:
         run: sudo bash -c "apt update && apt install -y openjdk-8-jdk"
 
       - name: Install Tomcat
-        run: sudo apt install -y tomcat9 tomcat9-admin
+        run: sudo apt install -y tomcat10 tomcat10-admin
 
       - name: restart tomcat9
-        run: sudo systemctl restart tomcat9
+        run: sudo systemctl restart tomcat10
 
       - name: Deploy WAR to Tomcat
         run : |
